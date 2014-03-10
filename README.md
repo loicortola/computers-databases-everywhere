@@ -38,8 +38,6 @@ Clients communicates with the server using JSON.
 Fetches the list of all companies.
 Useful when editing a computer : if the manufacturer can be edited when editing a computer, this operation can provides the full list of companies to select from.
 
-#### Query parameters: None
-
 #### Response status codes
 
 * **200 (OK)** : Companies are sent to the client in the response body.
