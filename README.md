@@ -56,15 +56,20 @@ Data is paginated.
 
 #### Response status codes
 
+* **200 (OK)** : Computers are sent to the client in the response body.
+* **400 (Bad Request)** : if one of the query parameters is invalid
+
+
 ### `POST /computers` 
 
 Creates a new computer.
 Data for the new computer is sent in the request body.
 
-* **201 (Created)** : Confirms that the computer was successfully created
-* **400 (Bad Request)** : if the specified id is not a valid computer id
 
 #### Response status codes
+
+* **201 (Created)** : Confirms that the computer was successfully created
+* **400 (Bad Request)** : if the specified id is not a valid computer id
 
 ### `DELETE /computers`
 
