@@ -6,6 +6,7 @@ Play's Computer Database, implemented with various frameworks and technologies.
 ## Specification
 
 The Computer Database is a pretty straightforward web app : it manages a list of computers.
+
 Computers can be : 
 
 * Listed : can by filtered by name or sorted by field
@@ -19,13 +20,13 @@ A computer has the following properties:
 
 * a technical id
 * a name
-* the day it was introduced
-* eventually, the days it was discontinued
+* eventually, the day it was introduced
+* eventually, the day it was discontinued
 * eventually, the manufacturer
 
 the manufacturer has the following properties:
 
-* a techical id
+* a technical id
 * a name
 
 ## REST API
