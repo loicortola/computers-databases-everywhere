@@ -52,25 +52,13 @@ Data is paginated.
 
 * `page` : the page to fetch (default : 1)
 * `pageSize` : the number of items per page (default : 10)
-* `filter` : a filter applied to the computer's name (default: none)
-* `orderBy` : the field used for sorting computers (default: sorted by name)
+* `filter` : a filter applied to the computer or the company's name (default: none)
+* `orderBy` : the field used for sorting computers (default: sorted by computer name)
 
 #### Response status codes
 
 * **200 (OK)** : Computers are sent to the client in the response body.
 * **400 (Bad Request)** : if one of the query parameters is invalid
-
-
-### `POST /computers` 
-
-Creates a new computer.
-Data for the new computer is sent in the request body.
-
-
-#### Response status codes
-
-* **201 (Created)** : Confirms that the computer was successfully created
-* **400 (Bad Request)** : if the specified id is not a valid computer id
 
 ### `DELETE /computers`
 
@@ -89,6 +77,16 @@ Fetches the computer with id `:id`.
 * **200 (OK)** : Computer is sent to the client in the response body.
 * **400 (Bad Request)** : if the specified id is not a valid computer id.
 * **404 (Not Found)** : if a computer with the specified id could not be found.
+
+### `POST /computer` 
+
+Creates a new computer.
+Data for the new computer is sent in the request body.
+
+#### Response status codes
+
+* **201 (Created)** : Confirms that the computer was successfully created
+* **400 (Bad Request)** : if the specified id is not a valid computer id
 
 ### `PUT /computer/:id`
 
