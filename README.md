@@ -60,6 +60,16 @@ Data is paginated.
 * **200 (OK)** : Computers are sent to the client in the response body.
 * **400 (Bad Request)** : if one of the query parameters is invalid
 
+### `POST /computers` 
+
+Creates a new computer.
+Data for the new computer is sent in the request body.
+
+#### Response status codes
+
+* **201 (Created)** : Confirms that the computer was successfully created
+* **400 (Bad Request)** : if the specified computer is invalid
+
 ### `DELETE /computers`
 
 Delete all computers.
@@ -77,16 +87,6 @@ Fetches the computer with id `:id`.
 * **200 (OK)** : Computer is sent to the client in the response body.
 * **400 (Bad Request)** : if the specified id is not a valid computer id.
 * **404 (Not Found)** : if a computer with the specified id could not be found.
-
-### `POST /computer` 
-
-Creates a new computer.
-Data for the new computer is sent in the request body.
-
-#### Response status codes
-
-* **201 (Created)** : Confirms that the computer was successfully created
-* **400 (Bad Request)** : if the specified id is not a valid computer id
 
 ### `PUT /computer/:id`
 
